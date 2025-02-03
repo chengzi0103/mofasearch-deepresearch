@@ -3,9 +3,17 @@ GOSIM Super Agent Hackathon: Building a Composition Search Engine
 
 ## Introduction
 
-### MoFA Search：Definition
+### MoFA Search: Definition
 
-**MoFA Search: Agentic, Distributed, DeepWeb Metasearch**
+**MoFA Compoisition Search Engine: Agentic, Distributed, DeepWeb Metasearch Engine**
+MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化的，智能体驱动的，深层网络集成搜索引擎。它：
+
+1. 不依赖于爬虫
+2. 返回实时信息
+3. 保护用户隐私
+4. 尊重内容提供者的利益
+5. 搜索范围可超过搜索引擎数十倍
+   
 
 ### Background
 #### Surface Web vs. **Deep Web**
