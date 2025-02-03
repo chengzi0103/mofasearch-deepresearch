@@ -1,4 +1,5 @@
 # MoFA搜索 （Mofasearch）
+
 GOSIM 超级智能体大赛：构建一个组合搜索引擎
 GOSIM Super Agent Hackathon: Building a Composition Search Engine
 ---
