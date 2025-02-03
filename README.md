@@ -1,11 +1,10 @@
-# mofasearch
+# MoFA搜索 （Mofasearch）
+GOSIM 超级智能体大赛：构建一个组合搜索引擎
 GOSIM Super Agent Hackathon: Building a Composition Search Engine
+---
+## 简介
+### MoFA搜索引擎: 定义
 
-## Introduction
-
-### MoFA Search: Definition
-
-**MoFA Compoisition Search Engine: Agentic, Distributed, DeepWeb Metasearch Engine**
 MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化的，智能体驱动的，深层网络集成搜索引擎。它：
 
 1. 不依赖于爬虫
@@ -13,10 +12,13 @@ MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化�
 3. 保护用户隐私
 4. 尊重内容提供者的利益
 5. 搜索范围可超过搜索引擎数十倍
+6. 通过智能体的组合实现的搜索，每个AI开发者都可以出力
    
+**MoFA Composition Search Engine: Agentic, Distributed, DeepWeb Metasearch Engine**
 
-### Background
-#### Surface Web vs. **Deep Web**
+### 背景
+
+#### 表层网络 vs. **深层网络**
 
 1. **表层网络（Surface Web）**：
    - 也称为“可见网络”。
@@ -29,11 +31,13 @@ MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化�
    - 通常需要登录、订阅或特定的网址才能访问，但不涉及非法或隐藏的内容。
    - 占据了互联网内容的绝大多数，估计约**90%以上**。
 
-两者的关键区别在于访问权限：表层网络的内容是自由可搜索的，而深层网络的内容是有意限制的，通常需要授权或直接链接才能访问。
+两者的关键区别在于是否可以被搜索引擎爬取和有效索引：表层网络的内容是可以被爬取、索引，因此是可搜索的，而深层网络的内容是是动态生成的，或者有意限制的，是不能爬或不让爬的，通常需要在内容提供商的网络门户进行搜索，或得到他们的授权以后，通过直接链接访问。
 
-#### Centralized Search vs. **Distributed Search**
+MoFA搜索引擎使得用户能够更方便地地搜索深层网络。
 
-分布式搜索是一种通过分散节点网络搜索信息的方法，而不是依赖像Google或Perplexity这样的集中式实体。与集中式搜索引擎依靠单一组织维护的大型数据库不同，分布式搜索引擎将工作负载和数据分散到多个独立节点或用户中。其主要特点和示例如下：
+#### Centralized Search vs. **Decentralized Search**
+
+去中心化的搜索是一种通过分散节点网络搜索信息的方法，而不是依赖像Google或Perplexity这样的集中式实体。与集中式搜索引擎依靠单一组织维护的大型数据库不同，去中心化的搜索引擎将工作负载和数据分散到多个独立节点或用户中。其主要特点和示例如下：
 
 1. **点对点（P2P）架构**：
    - 分布式搜索通常使用点对点（P2P）网络，其中用户既是信息的提供者也是消费者。
@@ -59,7 +63,7 @@ MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化�
 
 #### Search vs. **Metasearch**
 
-“搜索”和“元搜索”指的是两种不同的搜索方法，它们的主要区别在于数据的来源和处理方式：
+“搜索”和“元搜索”指的是两种不同的传统搜索方法，它们的主要区别在于数据的来源和处理方式：
 
 1. **搜索（Search）**：
    - 传统搜索引擎（如Google、Bing）有自己的独立数据库和索引体系，用于存储和整理网页内容。
@@ -70,6 +74,8 @@ MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化�
    - 它并不直接爬取网页，而是依赖其他搜索引擎的数据，并可能对结果进行一定的过滤、去重或重新排序，以提高结果的多样性和覆盖面。
    - 优势在于能综合不同搜索引擎的结果，避免单一搜索引擎的局限性，并有助于更广泛地覆盖信息。
 
+![Metasearch Engines | SpringerLink](https://media.springernature.com/lw685/springer-static/image/prt%3A978-0-387-39940-9%2F13/MediaObjects/978-0-387-39940-9_13_Part_Fig1-217_HTML.jpg)
+
 #### 区别总结
 
 - **数据来源**：搜索引擎有自己的数据库和索引；元搜索引擎依赖其他搜索引擎的数据。
@@ -79,10 +85,6 @@ MoFA搜索引擎是一个组合搜索引擎：是一个分布式，去中心化�
 #### 适用场景
 
 如果希望获得更多元化、广泛覆盖的搜索结果，且避免单一引擎的局限性，则元搜索是一个合适的选择。
-
-
-
-![Metasearch Engines | SpringerLink](https://media.springernature.com/lw685/springer-static/image/prt%3A978-0-387-39940-9%2F13/MediaObjects/978-0-387-39940-9_13_Part_Fig1-217_HTML.jpg)
 ## mofa camp/workshop
 ## mofa academy
 ## mofa connectors
