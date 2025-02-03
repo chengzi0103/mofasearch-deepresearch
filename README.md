@@ -2,6 +2,7 @@
 
 GOSIM 超级智能体大赛：构建一个组合搜索引擎
 GOSIM Super Agent Hackathon: Building a Composition Search Engine
+
 ---
 ## 简介
 ### MoFA搜索引擎: 定义
