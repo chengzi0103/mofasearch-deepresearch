@@ -1,6 +1,6 @@
 # MoFA组合搜索引擎
 
-![](C:\GitHub\mofasearch\images\flow.png)
+![](images/flow.png)
 
 **MoFA搜索引擎**是一个组合搜索引擎。它：
 
