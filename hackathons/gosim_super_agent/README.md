@@ -42,9 +42,9 @@ March, 2025
    <center>**处理 MoFA 搜索中单个网站的组件高级架构图**</center>
 
 ---
-运营
 
 [报名指南](guidelines_sign_on.md)
 
 [比赛规则](rules.md)
+
 ---
