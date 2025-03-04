@@ -39,8 +39,7 @@ March, 2025
 
    ![](../../images/flow.png)
 
-   <center>**处理 MoFA 搜索中单个网站的组件高级架构图**</center>
-
+   **处理 MoFA 搜索中单个网站的组件高级架构图**
 ---
 
 [报名指南](guidelines_sign_on.md)
