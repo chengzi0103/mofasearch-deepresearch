@@ -2,6 +2,8 @@
 
 March, 2025
 
+![poster](../../images/poster.jpg)
+
 #### 内容（What）：
 
 通过组合创新的方式，创建 LLM（大语言模型）驱动的，多智能体组合的搜索引擎，以去中心化的方式搜索网络。
@@ -45,5 +47,7 @@ March, 2025
 [报名指南](guidelines_sign_on.md)
 
 [比赛规则](rules.md)
+
+![barcode](../../images/barcode.jpg)
 
 ---
