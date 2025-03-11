@@ -58,7 +58,8 @@ Search vs. **Metasearch**
 MoFA搜索引擎使得用户能够更方便地对深层网络进行搜索。
 
 ---
-## MoFA搜索：Agent驱动的元搜索引擎
+
+### MoFA搜索：Agent驱动的元搜索引擎
 
 **MoFA Composition Search Engine: Agentic, Distributed, DeepWeb Metasearch Engine**
 
@@ -74,3 +75,18 @@ MoFASearch是一个MoFA社区的大规模试验，我们一起重新定义搜索
 - 搜索范围可超过搜索引擎数十倍：基于爬虫的搜索引擎可以有效覆盖表层网络（Surface Web）。而基于元搜索方案的MoFA搜索可以对本地信息、用户订阅信息和众多Web搜索界面背后的数据库信息等深网信息进行搜索。
 - 通过智能体的组合实现搜索、超越搜索：对于同一个网站，不同目的的搜索可能想获得不同的信息，因此可以设计不同的MoFA Search Connector Agents和Extractor Agents；通过多模态的Connectors，MoFA Search可以从提供图片的网站获得响应；通过提供Computer Use或Browser Use能力的Connector，MoFA Search可以将搜索查询转变为一系列的复杂操作而获得结果。M oFA Search不但将各智能体返回的结果进行组合，各智能体也引起因为其与众不同的能力而超越了简单的搜索，重新定义了搜索。
 - 是一个由**MoFA社区开发者集体协作，共同实现**的搜索引擎：MoFA Search不仅仅是一个由众多Agent组合而构成的搜索引擎，而且是由众多MoFA开发者(魔法师)协作组合而构建的搜索引擎，这是对组合AI理念的实践，也是对”平凡人做非凡事“的证明。
+
+---
+
+### MoFA搜索引擎的实现
+
+如架构图所示，一个MoFA Search Engine由多个成员智能体构成，它的设计细节可以不同，这里我们描述其中的一种实现方式：
+
+1. Search Planner：对用户输入的查询，制定搜索计划，选取最适合当前查询的数据源，准备进行搜索。根据不同的场景，计划可以采用不同的策略。一个复杂的搜索规划智能体还可以针对不同的数据源和不同的策略改写查询，以获得最佳的搜索效果。
+2. Query Dispatcher和Web Source Connectors：将用户输入的查询分发到多个数据源。每个数据源可能有对应的Web Source Connector智能体进行连接。Query Dispatcher管理着多个Web Source Connectors, 基于Search Planner的规划，选取多个Connectors，发送查询。
+3. Result Extractor：当不同的数据源返回搜索结果，Result Extractor智能体会根据不同的策略在返回的内容中抽取相关搜索的信息，过滤掉无用的信息。
+4. Result Merger：整合由各数据源返回并经解析过滤的内容，形成最终报告，返回搜索用户。
+
+各成员智能体也可以有不同的变种。比如，某Search Planner可以规划多次串行进行的搜索，即将前一个搜索的结果作为下一个搜索的输入进行搜索；某个Query Connector可以连接用户的gmail，另一个Connector则能使用用户的账户连接到华尔街日报，... 一切有赖于业务的需求，以及魔法师开发者的想象。
+
+通过MoFA框架，不同的智能体连接在一起，实现不一样的搜索。
