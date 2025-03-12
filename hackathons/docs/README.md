@@ -21,14 +21,16 @@ MoFA 独特的设计类理念是：
 ## **2.1 开发环境准备**
 
 ### 2.1.1 Python 环境
+
 ```bash
 # 安装 UV 包管理器 加快mofa安装
 pip install uv
 ```
 
-**注意**: 
--  如果你的环境是conda的话,由于dora可能在不同系统中对多python环境支持可能存在问题，您需要在默认的base环境安装mofa
-- 要求python环境 >= 3.10 
+### **注意**: 
+- 本地python环境要纯净，不要多个python版本，否则容易导致Dora-rs运行环境和Mofa安装环境的冲突。
+- 如果你的环境使用的是Anaconda / Miniconda，务必将Mofa安装到`Base`环境下，以保证Dora运行环境和Mofa环境的一致。
+- 要求python环境 >= 3.10。
 
 ### 2.1.2 Rust 环境
 ```bash

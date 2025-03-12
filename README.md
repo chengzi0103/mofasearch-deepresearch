@@ -90,3 +90,12 @@ MoFASearch是一个MoFA社区的大规模试验，我们一起重新定义搜索
 各成员智能体也可以有不同的变种。比如，某Search Planner可以规划多次串行进行的搜索，即将前一个搜索的结果作为下一个搜索的输入进行搜索；某个Query Connector可以连接用户的gmail，另一个Connector则能使用用户的账户连接到华尔街日报，... 一切有赖于业务的需求，以及魔法师开发者的想象。
 
 通过MoFA框架，不同的智能体连接在一起，实现不一样的搜索。
+
+
+### 快速安装MofaSearch
+1. [安装mofa框架](https://github.com/moxin-org/mofa/tree/main/python)
+2. 克隆本仓库 
+   - `git clone git@github.com:RelevantStudy/mofasearch.git`
+3. 运行案例 
+   - `cd mofasearch/python/examples`
+   - 进入案例中运行dataflow
