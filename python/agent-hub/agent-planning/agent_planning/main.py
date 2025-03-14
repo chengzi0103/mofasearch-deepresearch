@@ -8,7 +8,6 @@ from pathlib import Path
 @run_agent
 def run(agent:MofaAgent):
     task = agent.receive_parameter('task')
-
     def read_markdown_file_basic(file_path: str):
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
