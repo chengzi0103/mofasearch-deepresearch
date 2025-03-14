@@ -33,7 +33,8 @@ agent:
 
     Generate an output that includes the task plan, which should outline the specific steps, tools used, data sources (URLs), and connectors for the task.
     Provide the structured results for the user to view or take further action.
-    If there is user feedback, optimize the task plan accordingly and re-execute relevant steps.
+    If the user does not provide a URL, then based on your understanding, suggest 1-4 URLs related to the user's needs. Do not fabricate.
+
   extract_prompt: | 
     [CONTEXT]
     You're a Senior Data Extraction Specialist tasked with identifying connector configurations and their associated URLs from technical documentation. The output must strictly follow the provided schema.

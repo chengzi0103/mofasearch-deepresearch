@@ -1,3 +1,4 @@
+import json
 import os
 import asyncio
 from bs4 import BeautifulSoup
@@ -34,10 +35,16 @@ def load_url(url:str):
 def run(agent:MofaAgent):
     url = agent.receive_parameter('crawl4ai-connector-url')
     all_result = []
-    if isinstance(url,list):
-        for u in url:
-            all_result.append({u:load_url(url=u)})
-    elif isinstance(url,str):
+    try:
+        url = json.loads(url)
+        if isinstance(url, list):
+            for u in url:
+                print('-------- url :',u, type(u))
+                all_result.append({u:load_url(url=u)})
+        elif isinstance(url,str):
+            print('Error loading URL: ', url, type(url))
+            all_result.append({url: load_url(url=url)})
+    except Exception as e :
         all_result.append({url:load_url(url=url)})
     agent.send_output(agent_output_name='crawl4ai_connector_result',agent_result=all_result)
 def main():
