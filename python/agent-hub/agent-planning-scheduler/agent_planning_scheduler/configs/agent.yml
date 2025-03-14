@@ -108,5 +108,5 @@ agent:
 
 
   connectors:
-    - /Users/chenzi/project/zcbc/mofasearch/python/agent-hub/crawl4ai-connector/README.md
-    - /Users/chenzi/project/zcbc/mofasearch/python/agent-hub/selenium-connector/README.md
+    - ../../selenium-connector/README.md
+    - ../../crawl4ai-connector/README.md
